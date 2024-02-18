@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         p::before{
+            content: "aa";
+        }
+        p::after{
+            content: "vv";
+        }
+        p {
+            color: orange;
+        }
+        p::first-letter{
+            color: black;
+        }
+       
+        p:hover{ 
+            /* pasar el mouse por encima para que ambie de color  */
+
+            color: aqua;
+        }
+        div p:nth-child(2){
+            color: red;
+        }
+        ::placeholder{
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p>hola</p>
+    <div>
+        <p>hola</p>
+        <p>mundo</p>
+        <p>SIUUUUUUUUUUUUUUUUUUUUUU</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
